@@ -1,45 +1,30 @@
-# VANGUARD
+# VANGUARD (archived)
 
-Raw VANGUARD material, moved here from [DGK](https://github.com/wking53214/DGK)
-once this repo existed — previously kept there deliberately as "raw
-VANGUARD material, not something that needs its own destination" until
-now.
+**Retired 2026-09-03.** Both files here have been folded into
+[GSA-GATEWAY](https://github.com/wking53214/GSA-GATEWAY), which is now the
+canonical home for this content:
 
-## Contents
+- `vanguard-behavioral-simulation-flattened.py` → its working reconstruction,
+  `governance-stack/vanguard-behavioral-simulation.py`, has been in
+  GSA-GATEWAY since 2026-08-27 and is wired in as `sovereign_kernel.py`'s
+  perimeter layer. This flattened original is preserved as evidence at
+  `governance-stack/archive/vanguard-behavioral-simulation-flattened.py`.
+- `vanguard-unified-governance-wrapper.py` — superseded by
+  `governance-stack/sovereign_kernel.py`, which builds the same
+  perimeter-then-master-kernel composition for real. Preserved as evidence
+  at `governance-stack/archive/vanguard-unified-governance-wrapper.py`.
 
-- **`vanguard-unified-governance-wrapper.py`**: `VanguardUnifiedGovernanceStack`
-  ("VANGUARD-MASTER-HYBRID WRAPPER V10.0") — a perimeter-gate wrapper
-  that runs a `PipelineCycleManager` forecast check before delegating to
-  a `UnifiedSovereignKernel` ("DIT-GOV4-DGK Hybrid Kernel"). Both
-  `PipelineCycleManager` and `UnifiedSovereignKernel` are defined in
-  [GSA-GATEWAY](https://github.com/wking53214/GSA-GATEWAY)'s
-  `governance-stack/` — this file doesn't define its own governance
-  logic, it's VANGUARD's own branding wrapped around those two classes.
-  Parses cleanly (real line breaks, no corruption).
+This repo held VANGUARD's content only because it had been moved out of
+[DGK](https://github.com/wking53214/DGK) with nowhere else to go — its own
+prior version of this README said as much: "raw VANGUARD material, not
+something that needs its own destination." Unlike
+[CITADEL](https://github.com/wking53214/CITADEL), which stays its own repo
+deliberately (a general-purpose tool, not GSA-specific), nothing here argued
+for staying separate once GSA-GATEWAY existed, and nothing outside
+GSA-GATEWAY referenced this content.
 
-- **`vanguard-behavioral-simulation-flattened.py`**: self-declared
-  `SYSTEM NAME: VANGUARD (Validation Matrix & Neutral Governance
-  Automated Routing Engine)` — "an advanced closed-loop behavioral
-  simulation kernel designed to model, forecast..." per its own header.
-  A single unbroken line (no real newlines at all — the filename says
-  so), same flattening defect seen throughout this week's sweep. Kept
-  as-is, not reconstructed; reconstructing real structure from a
-  flattened file this size would mean guessing at intent.
-
-The `SovereignGovernanceStack` files in GSA-GATEWAY's `governance-stack/`
-also reference VANGUARD conceptually (as one of several subsystems it
-wires together, alongside SRE, DIT, and a consensus engine) — those
-stay in GSA-GATEWAY since they're multi-system integration code, not
-VANGUARD-specific content.
-
-## Runnable status
-
-Neither file executes on its own. The wrapper parses but references
-`PipelineCycleManager` / `UnifiedSovereignKernel` (supplied by GSA-GATEWAY)
-and is a ~45-line sketch of the perimeter-gate pattern, not a working
-integration. The behavioral-simulation file does not parse — it is a single
-flattened line. This repository is a preserved architectural baseline, not
-an executable system.
+No further changes are expected here. See GSA-GATEWAY's own README for the
+full account of this fold-in, including why neither file ran on its own.
 
 ## License
 
