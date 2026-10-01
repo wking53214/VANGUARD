@@ -31,6 +31,6 @@ None you should rely on. Wrapper *would* `REJECTED / VANGUARD_ANOMALY` if it imp
 
 ## 7. Stack Integration Topology
 
-None. This repository is retired, sits outside the live path, and has no integration with other components.
+None. This repository is retired and not on the live path.
 
 Apache-2.0.
