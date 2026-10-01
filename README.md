@@ -1,10 +1,10 @@
 # VANGUARD
 
-**Retired 2026-09-03.** Two preserved files. Canonical home for this content: [`TOUCHSTONE`](https://github.com/wking53214/TOUCHSTONE). Not on the live path.
+**Retired 2026-09-03.** Two preserved files. Canonical home for this content: a separate private repository. Not on the live path.
 
 ## 1. Pipeline Position & Role
 
-**ARCHIVED PERIMETER SKETCH.** Explicitly excluded from Admission→Custody. Moved out of DGK because it had nowhere else to go.
+**ARCHIVED PERIMETER SKETCH.** Explicitly excluded from the live pipeline. Moved out of another private repository because it had nowhere else to go.
 
 ## 2. Full System Scope & Architectural Depth
 
@@ -15,7 +15,7 @@ IOError on log write is swallowed (`pass`) — **fail-open on audit**.
 
 ## 3. What It Does NOT Do / Non-Goals
 
-Forecast, Lyapunov stability, wrap a real kernel, govern actuation. Not [`fortress-kernel`](https://github.com/wking53214/fortress-kernel).
+Forecast, Lyapunov stability, wrap a real kernel, govern actuation.
 
 ## 4. Brutally Honest Current Status & Gaps
 
@@ -31,9 +31,6 @@ None you should rely on. Wrapper *would* `REJECTED / VANGUARD_ANOMALY` if it imp
 
 ## 7. Stack Integration Topology
 
-```text
-DGK → this repo → TOUCHSTONE specimens → SWIZZLE/ghost_tools
-observe-perceive / fortress-kernel  ✗
-```
+None. This repository is retired, sits outside the live path, and has no integration with other components.
 
 Apache-2.0.
